@@ -10,7 +10,7 @@ Table of contents:
 - [Frequently aksed questions](#Frequently-aksed-questions)
 
 ## About the OliInSeq program <a id="about-the-OliInSeq-package"></a>
-Outlier detection, outlier masking and removal in multiple sequence alignments
+Outlier detection, outlier masking and removing in multiple sequence alignments.
 
 Outliers in multiple sequence alignments are a common source of error in all alignment bases sequence analyses problems.
 Outliers add misleading signal in pyhlogeny or population genetic analyses. They can also result in a model misspecification in model based analyses.
