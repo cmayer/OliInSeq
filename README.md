@@ -31,7 +31,7 @@ Here I will only explain how to compile it on Mac and Linux computers.
 - Make sure that you copy the OliInSeq-v0.9.6 program to a folder that listed in your $PATH variable, or copy it to the folder you want to use it from.
 
 ## Documentation <a id="documentation"></a>
-You can always get online help on OliInSeq by typing:
+You can always get online help on OliInSeq by typing:\
 OliInSeq-v0.x.y --help
 
 The OliInSeq program has been designed to identify, mask and/or remove
