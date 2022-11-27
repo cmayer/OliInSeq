@@ -76,54 +76,53 @@ This displays the following usage:
                       integer>] [-g <floating point number>] [-I <floating\
                       point number>] [-f <floating point number>] [-R]\
                       [--corresponding-nuc-fasta-file-name <string>] [--]\
-                      [--version] [-h]\
+                      [--version] [-h]  
 
-Where: \
-   -i <string>,  --input-file <string>\
-     (required)  Name of input file in fasta format.\
+Where:  
+   -i <string>,  --input-file <string>. 
+     (required)  Name of input file in fasta format.  
 
-   -o <string>,  --output-file <string>\
-     (required)  Name of output file.\
+   -o <string>,  --output-file <string> 
+     (required)  Name of output file.  
 
-   -e <floating point number>,\
-      --thresholdPropOutlierWindows2removeSequences <floating point\
-      number>\
+   -e <floating point number>,  
+      --thresholdPropOutlierWindows2removeSequences <floating point number>  
      A sequence can be completely removed from an MSA if it is identified
      as an outlier in at least the specified proportion of sequence
      windows. The default is 0.5. So a sequence which is identified as an
      outlier in 50% or more of the sequence windows, it is removed
-     completely. A value >1 implies, that sequences are never removed. 
+     completely. A value >1 implies, that sequences are never removed.  
 
-   --minNumValidSeqsInWindow <integer>
+   --minNumValidSeqsInWindow <integer>  
      A meaningful outlier test can normally only be carried out, if the
      number of sequences is large. This is not always the case. In order to
      be able to compute quartiles and a IQR, we decided to require 5 valid
      sequences in a sliding window to be able to detect outliers. If you
      think a different value for the minimum number of sequences is
-     appropriate, it can be specified with this parameter. Default: 5. \
+     appropriate, it can be specified with this parameter. Default: 5.  
 
-   -M,  --mask-ambig\
+   -M,  --mask-ambig  
      With this argument, outlier sequence segments of nucleotide sequences
      are masked with Ns and amino acid sequences with X. Default: mask with
-     lower case symbols.\
+     lower case symbols.  
 
-   -N,  --no-masking\
+   -N,  --no-masking  
      The default is to mask outliers with lower case symbols. With the -M
      option, residues are masked with the ambiguity code characters N
      (nucleotide) or X (amino acids). With the -N option, masking can be
-     turned off completely.\
+     turned off completely.  
 
-   --verbosity <unsigned integer>\
+   --verbosity <unsigned integer>  
      The verbosity option controls the amount of information OliInSeq
      writes to the console while running. 0: Print only welcome message and
-     essential error messages that lead to exiting the program.\
+     essential error messages that lead to exiting the program.  
 
-   -w <unsigned integer>,  --windowsSize <unsigned integer>\
+   -w <unsigned integer>,  --windowsSize <unsigned integer>  
      The window size for the sliding window outlier detection. For a value
      of 0 no sliding window will be used, but the sequence will be analyses
-     as a whole. Default: 30\
+     as a whole. Default: 30  
 
-   -g <floating point number>,  --maximum-gap-proportion <floating point number>\
+   -g <floating point number>,  --maximum-gap-proportion <floating point number>  
      If a sequence segment of window size contains only or mostly gaps, its
      score to all other sequences could be used to identify it as an
      outlier. To avoid problems und meaningless scores, we do not consider
@@ -134,37 +133,37 @@ Where: \
      the inter quartile distance nor can this sequence be determined as an
      outlier in the particular window. This sequence segment is also not
      considered when computing the proportion of windows in which a
-     sequence is an outlier. Default: 0.5\
+     sequence is an outlier. Default: 0.5  
 
-   -I <floating point number>,  --minimum-IQR <floating point number>\
+   -I <floating point number>,  --minimum-IQR <floating point number>  
      In conserved or almost invariant regions, a sequence is identified as
      an outlier even if it differs by only one or two residues. To avoid
      recognizing such a sequence as an outlier, a minimum value for the IQR
      can be specified. If the true IQR is smaller than the minimum IQR, the
-     minimum IRQ is used instead of the real IQR. Default: 0.563\
+     minimum IRQ is used instead of the real IQR. Default: 0.563  
 
-   -f <floating point number>,  --IQR-factor <floating point number>\
+   -f <floating point number>,  --IQR-factor <floating point number>  
      For a given window, outliers are determined by computing
      Q1-IQT*IQR-factor. Scores lower than this are considered as outliers.
-     Default: 1.5\
+     Default: 1.5  
 
-   -R,  --remove-gap-ambig-lowerCase-sites\
+   -R,  --remove-gap-ambig-lowerCase-sites  
      With this argument, alignment sites are removed which contain only gap
-     , ambig, and lower case sequence symbols.\
+     , ambig, and lower case sequence symbols.  
 
-   --corresponding-nuc-fasta-file-name <string>\
+   --corresponding-nuc-fasta-file-name <string>  
      Name of file corresponding to the specified amino acid file in which
      outliers are detected. The corresponding file has to correspond to the
-     ....\
+     ....  
 
-   --,  --ignore_rest\
-     Ignores the rest of the labeled arguments following this flag.\
+   --,  --ignore_rest  
+     Ignores the rest of the labeled arguments following this flag.  
 
-   --version\
-     Displays version information and exits.\
+   --version  
+     Displays version information and exits.  
 
-   -h,  --help\
-     Displays usage information and exits.\
+   -h,  --help  
+     Displays usage information and exits.  
 
 
 ## Quickstart <a id="quickstart"></a>
