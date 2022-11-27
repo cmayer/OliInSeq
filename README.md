@@ -66,10 +66,10 @@ The OliInSeq program has been designed to identify, mask and/or remove
    alignment.
 
 **You can always get online help on OliInSeq by typing:**\
-OliInSeq-v0.x.y --help:\
+OliInSeq-v0.x.y --help:  
 
-This displays the following usage:\
- ./OliInSeq-vx.y.z\
+This displays the following usage:  
+ ./OliInSeq-vx.y.z. 
                       -i <string> -o <string> [-e <floating point number>]\
                       [--minNumValidSeqsInWindow <integer>] [-M] [-N]\
                       [--verbosity <unsigned integer>] [-w <unsigned\
