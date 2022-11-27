@@ -38,7 +38,7 @@ The OliInSeq program has been designed to identify, mask and/or remove
    are: Fasta files of aligned amino acid sequences. Sequences can either
    be analysed as a whole or using a sliding window. In most cases a
    sliding window is recommended, since it is more sensitive if sequences
-   are outliers only in parts of the alignment.\
+   are outliers only in parts of the alignment.  
 
    The algorithm works as follows: Pairwise sequence scores (blosum62
    scores) are computed for all sequences in the input file. From this, a
@@ -69,7 +69,8 @@ The OliInSeq program has been designed to identify, mask and/or remove
 OliInSeq-v0.x.y --help:\
 
 This displays the following usage:\
- ./OliInSeq-vx.y.z  -i <string> -o <string> [-e <floating point number>]\
+ ./OliInSeq-vx.y.z\
+                      -i <string> -o <string> [-e <floating point number>]\
                       [--minNumValidSeqsInWindow <integer>] [-M] [-N]\
                       [--verbosity <unsigned integer>] [-w <unsigned\
                       integer>] [-g <floating point number>] [-I <floating\
