@@ -167,6 +167,7 @@ Where:
 
 
 ## Quickstart <a id="quickstart"></a>
+./OliInSeq-vx.y.z. -i input-fasta-file.fas -o output-fasta.fas
 
 
 
