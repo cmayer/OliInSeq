@@ -20,20 +20,19 @@ OliInSeq stands for OutLIer Detection IN SEQuence alingnments. The idea for this
 **When using the OliInSeq program, please cite:**
 Will be updated soon.
 
-## System requirements:  <a id="system-requirements"></a>
-OliInSeq can be compiled on all platforms, which provide a C++ compiler.
-In particular this includes Windows, MacOS and Linux operating systems.
-Here I will only explain how to compile it on Mac and Linux computers.
+
 
 ## Compiling and installing OliInSeq <a id="compiling-and-installing"></a>
 - Download the project or clone the project locally.
 - On the command line go to the project folder and type "make".
-- Make sure that you copy the OliInSeq-v0.9.6 program to a folder that listed in your $PATH variable, or copy it to the folder you want to use it from.
+- Make sure that you copy the OliInSeq-vx.y.z program to a folder that listed in your $PATH variable, or copy it to the folder you want to use it from.
+
+### System requirements:  <a id="system-requirements"></a>
+OliInSeq can be compiled on all platforms, which provide a C++ compiler.
+In particular this includes Windows, MacOS and Linux operating systems.
+Here I will only explain how to compile it on Mac and Linux computers.
 
 ## Documentation <a id="documentation"></a>
-You can always get online help on OliInSeq by typing:\
-OliInSeq-v0.x.y --help
-
 The OliInSeq program has been designed to identify, mask and/or remove
    outlier sequences in molecular sequence alignments.Accepted input files
    are: Fasta files of aligned amino acid sequences. Sequences can either
@@ -66,9 +65,11 @@ The OliInSeq program has been designed to identify, mask and/or remove
    residues will be masked/removed corresponding to the amino acid
    alignment.
 
+**You can always get online help on OliInSeq by typing:**\
+OliInSeq-v0.x.y --help:\
 
-This displays the following usage:
- ./OliInSeq-v0.9.6  -i <string> -o <string> [-e <floating point number>]
+This displays the following usage:\
+ ./OliInSeq-vx.y.z  -i <string> -o <string> [-e <floating point number>]
                       [--minNumValidSeqsInWindow <integer>] [-M] [-N]
                       [--verbosity <unsigned integer>] [-w <unsigned
                       integer>] [-g <floating point number>] [-I <floating
