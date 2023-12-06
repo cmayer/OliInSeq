@@ -425,6 +425,7 @@ void remove_and_mask_outliers(general_parameters general_param, outlier_paramete
 
 void remove_and_mask_outliers_in_a_corresponding_nucleotide_alignment(general_parameters general_param, outlier_parameters out_param, CSequences2 *prot_seqs, CSequences2 *nuc_seqs, map<faststring, vector<unsigned> > &outlier_coord_map, map<faststring, float> &outlier_windows_prop)
 {
+  /*
   if (general_param.corresponding_nucleotide_alignment_file_name.empty())
     return;
 
@@ -458,6 +459,8 @@ void remove_and_mask_outliers_in_a_corresponding_nucleotide_alignment(general_pa
   {
     cerr << "Found this number of taxa in corresponding nucleotide file:      " << nuc_seqs->GetTaxaNum()  << endl;
   }
+
+  */
 
   for (int i = prot_seqs->GetTaxaNum()-1; i >= 0; --i)
   {
