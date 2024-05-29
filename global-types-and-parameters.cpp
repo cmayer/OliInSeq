@@ -1,5 +1,5 @@
-/*  Remove-Outlier-Sequences (version 0.9.5)
- *  Copyright 2018 by Christoph Mayer
+/*  Remove-Outlier-Sequences (version 0.9.6)
+ *  Copyright 2023 by Christoph Mayer
  *
  *  This source file is part of the Remove-Outlier-Sequences program.
  * 
